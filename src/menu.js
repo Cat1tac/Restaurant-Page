@@ -1,7 +1,7 @@
 export default function menuPage(){
     //title
     const title = document.createElement('h1');
-    title.textContent = "Menu";
+    title.textContent = "Contect";
     title.classList.add('titleStyle');
 
     //first item

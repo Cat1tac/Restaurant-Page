@@ -1,6 +1,7 @@
 import './style.css';
 import {mainPage} from './home';
 import menuPage from './menu';
+import contactPage from './contact';
 
 const display = document.querySelector('#content');
 display.appendChild(mainPage().title);
@@ -26,7 +27,9 @@ pages.forEach((page) => {
             display.appendChild(menuPage().orangesContainer);
             display.appendChild(menuPage().cakeContainer);
         } else {
-            // Contact goes here
+            display.appendChild(contactPage().title);
+            display.appendChild(contactPage().storeContactContainer);
+            display.appendChild(contactPage().ownerContainer);
         }
     });
 });
