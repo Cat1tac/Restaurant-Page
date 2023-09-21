@@ -14,7 +14,8 @@ export default function contactPage(){
     const storeEmail = document.createElement('p');
     storeEmail.textContent = 'naranjaRes@gmail.com'
     const storeImage = document.createElement('img');
-    storeImage.src = '../src/mcDonalds.jpeg'
+    storeImage.src = '../src/mcDonalds.jpeg';
+    storeImage.alt = 'image';
     storeContactContainer.append(storeTitle, storeNumber, storeEmail, storeImage);
 
     //contact 2
@@ -27,7 +28,8 @@ export default function contactPage(){
     const ownerEmail = document.createElement('p');
     ownerEmail.textContent = 'JynxBlack@gmail.com'
     const ownerImage = document.createElement('img');
-    ownerImage.src = '../src/owner.jpg'
+    ownerImage.src = '../src/owner.jpg';
+    ownerImage.alt = 'owner';
     ownerContainer.append(ownerTitle, ownerNumber, ownerEmail, ownerImage);
     
     return {title, storeContactContainer, ownerContainer}

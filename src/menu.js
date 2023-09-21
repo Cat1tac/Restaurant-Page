@@ -11,6 +11,7 @@ export default function menuPage(){
     orangesTitle.textContent = "The Classic Orange";
     const orangeImage = document.createElement('img');
     orangeImage.src = "../src/oranges.jpg";
+    orangeImage.alt = "oranges";
     const orangesDescription = document.createElement('p');
     orangesDescription.textContent = "The classic orange everyone knows and loves. Our oranges are locally grown and are the most fresh and juicy fruits you will ever soak your teeth in.";
     const orangeCost = document.createElement('h5');
@@ -24,6 +25,7 @@ export default function menuPage(){
     cakeTitle.textContent = "Sicilian Whole Orange Cake";
     const cakeImage = document.createElement('img');
     cakeImage.src = "../src/orangeCake.jpeg";
+    cakeImage.alt = "orangeCake";
     const cakeDescription = document.createElement('p');
     cakeDescription.textContent = "A cake made out of oranges with a divine smell";
     const cakeCost = document.createElement('h5');

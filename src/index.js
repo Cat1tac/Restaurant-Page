@@ -1,4 +1,8 @@
 import './style.css';
+import './mcDonalds.jpeg';
+import './orangeCake.jpeg';
+import './oranges.jpg';
+import 'owner.jpg';
 import {mainPage} from './home';
 import menuPage from './menu';
 import contactPage from './contact';
