@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 body {
@@ -32,6 +33,7 @@ footer {
 
 .page:hover {
     border: 2px solid rgb(192, 131, 0);
+    cursor: pointer;
 }
 
 .page:focus {
@@ -62,8 +64,25 @@ footer {
 
 .titleStyle {
     border: 5px solid rgb(255, 166, 0);
+    background-color: rgb(222, 224, 76);
     width: fit-content;
     height: fit-content;
     padding: 10px;
     border-radius: 100px; 
+}
+
+.homeContainterStyle {
+    border: 5px solid rgb(255, 166, 0);
+    background-color: rgb(222, 224, 76);
+    width: 400px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.homeContainterStyle > h4 {
+    font-size: 25px;
 }
