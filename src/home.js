@@ -4,9 +4,6 @@ function mainPage() {
     title.textContent = "Resturante de Naranja";
     title.classList.add('titleStyle');
 
-    //image
-    
-
     //Location
     const locationContainer = document.createElement('div');
     locationContainer.classList.add('homeContainterStyle');
