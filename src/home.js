@@ -5,8 +5,7 @@ function mainPage() {
     title.classList.add('titleStyle');
 
     //image
-    const image = document.createElement('img');
-    image.src = "../src/oranges.jpg";
+    
 
     //Location
     const locationContainer = document.createElement('div');
@@ -14,7 +13,7 @@ function mainPage() {
     const locationTitle = document.createElement('h4');
     locationTitle.textContent = "Location";
     const locationText = document.createElement('p');
-    locationText.textContent = "1800 orange grotto, Juice, Vermont";
+    locationText.textContent = "1800 orange grotto, Juice, Florida";
     locationContainer.appendChild(locationTitle);
     locationContainer.appendChild(locationText);
 
@@ -43,10 +42,10 @@ function mainPage() {
     const statementContainer = document.createElement('div');
     statementContainer.classList.add('homeContainterStyle');
     const statement = document.createElement('p');
-    statement.textContent = "This is the most woderous resturant in the world. We serve the best oranges that will get you wnating to come back for more and more! Come down to resturante de Naranja to partake in our supreme cuisine.";
+    statement.textContent = "This is the most wonderous resturant in the world. We serve the best oranges that will get you wnating to come back for more and more! Come down to Resturante de Naranja to partake in our supreme cuisine.";
     statementContainer.appendChild(statement);
 
-    return {title, image, statementContainer, locationContainer, hoursContainer};
+    return {title, statementContainer, locationContainer, hoursContainer};
 }
 
 export {mainPage};

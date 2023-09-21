@@ -1,10 +1,9 @@
 import './style.css';
-import {mainPage} from './home'
-console.log(mainPage());
+import {mainPage} from './home';
+import menuPage from './menu';
 
 const display = document.querySelector('#content');
 display.appendChild(mainPage().title);
-display.appendChild(mainPage().image);
 display.appendChild(mainPage().statementContainer);
 display.appendChild(mainPage().hoursContainer);
 display.appendChild(mainPage().locationContainer);
@@ -19,12 +18,13 @@ pages.forEach((page) => {
         
         if (page.textContent == "Home") {
             display.appendChild(mainPage().title);
-            display.appendChild(mainPage().image);
             display.appendChild(mainPage().statementContainer);
             display.appendChild(mainPage().hoursContainer);
             display.appendChild(mainPage().locationContainer);
         } else if(page.textContent == "Menu") {
-            //menu content goes here
+            display.appendChild(menuPage().title);
+            display.appendChild(menuPage().orangesContainer);
+            display.appendChild(menuPage().cakeContainer);
         } else {
             // Contact goes here
         }
