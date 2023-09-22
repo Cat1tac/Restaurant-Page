@@ -1,3 +1,6 @@
+import Icon1 from '../src/mcDonalds.jpeg';
+import Icon2 from '../src/owner.jpg';
+
 export default function contactPage(){
     //title
     const title = document.createElement('h1');
@@ -13,9 +16,9 @@ export default function contactPage(){
     storeNumber.textContent = 'Number: (305)-454-2901';
     const storeEmail = document.createElement('p');
     storeEmail.textContent = 'naranjaRes@gmail.com'
-    const storeImage = document.createElement('img');
-    storeImage.src = '../src/mcDonalds.jpeg';
-    storeImage.alt = 'image';
+    const storeImage = new Image();
+    storeImage.src = Icon1;
+    storeImage.alt = 'store';
     storeContactContainer.append(storeTitle, storeNumber, storeEmail, storeImage);
 
     //contact 2
@@ -27,8 +30,8 @@ export default function contactPage(){
     ownerNumber.textContent = 'Number: (305)-431-0945';
     const ownerEmail = document.createElement('p');
     ownerEmail.textContent = 'JynxBlack@gmail.com'
-    const ownerImage = document.createElement('img');
-    ownerImage.src = '../src/owner.jpg';
+    const ownerImage = new Image();
+    ownerImage.src = Icon2;
     ownerImage.alt = 'owner';
     ownerContainer.append(ownerTitle, ownerNumber, ownerEmail, ownerImage);
     

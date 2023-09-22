@@ -1,3 +1,6 @@
+import Icon1 from "../src/oranges.jpg";
+import Icon2 from "../src/orangeCake.jpeg";
+
 export default function menuPage(){
     //title
     const title = document.createElement('h1');
@@ -9,8 +12,8 @@ export default function menuPage(){
     orangesContainer.classList.add('menuContainerStyle');
     const orangesTitle = document.createElement('h4');
     orangesTitle.textContent = "The Classic Orange";
-    const orangeImage = document.createElement('img');
-    orangeImage.src = "../src/oranges.jpg";
+    const orangeImage = new Image();
+    orangeImage.src = Icon1;
     orangeImage.alt = "oranges";
     const orangesDescription = document.createElement('p');
     orangesDescription.textContent = "The classic orange everyone knows and loves. Our oranges are locally grown and are the most fresh and juicy fruits you will ever soak your teeth in.";
@@ -23,8 +26,8 @@ export default function menuPage(){
     cakeContainer.classList.add('menuContainerStyle');
     const cakeTitle = document.createElement('h4');
     cakeTitle.textContent = "Sicilian Whole Orange Cake";
-    const cakeImage = document.createElement('img');
-    cakeImage.src = "../src/orangeCake.jpeg";
+    const cakeImage = new Image();
+    cakeImage.src = Icon2;
     cakeImage.alt = "orangeCake";
     const cakeDescription = document.createElement('p');
     cakeDescription.textContent = "A cake made out of oranges with a divine smell";
